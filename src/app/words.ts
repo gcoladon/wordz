@@ -13,7 +13,7 @@ export const words = [
   },
   {
     id: 3,
-    book_id: 4,
+    book_id: 2,
     word: 'hearse',
     def: 'a vehicle for conveying a dead person to the place of burial.'
   }
