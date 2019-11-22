@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { WordListComponent } from './word-list/word-list.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
+import { WordDetailsComponent } from './word-details/word-details.component';
 
 @NgModule({
   imports:      [ 
@@ -21,7 +23,9 @@ import { WordListComponent } from './word-list/word-list.component';
 	AppComponent,
 	BookListComponent,
 	TopBarComponent,
-	WordListComponent ],
+	WordListComponent,
+	BookDetailsComponent,
+	WordDetailsComponent ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
