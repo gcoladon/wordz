@@ -14,6 +14,7 @@ import { WordListComponent } from './word-list/word-list.component';
     FormsModule, 
     RouterModule.forRoot([
       { path: '', component: BookListComponent },
+      { path: 'log-in', component: WordListComponent },
     ])
     ],
     declarations: [
