@@ -16,5 +16,11 @@ export const books = [
     name: 'Infinite Powers: How Calculus Reveals the Secrets of the Universe',
     author: 'Steven Strogatz',
     pages: 389
+  },
+  {
+    id: 4,
+    name: 'Valkyrie',
+    author: 'Kate O\'Hearn',
+    pages: 344
   }
 ];
