@@ -2,8 +2,8 @@
   {{ book.name }}
 </h3>
 
-By: {{ book.author }}
-Pages: {{ book.pages }}
+<p>Author: {{ book.author }}</p>
+<p>Pages: {{ book.pages }}</p>
 
 <div *ngFor="let word of words">
   <p *ngIf="book.id == word.book_id">

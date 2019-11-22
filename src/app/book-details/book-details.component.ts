@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { books } from '../books';
+import { words } from '../words';
 
 @Component({
   selector: 'app-book-details',
