@@ -17,7 +17,9 @@ export class BookDetailsComponent implements OnInit {
 
     ngOnInit() {
 	this.route.paramMap.subscribe(params => {
-	    this.book = books[+params.get('bookId')];
+	    this.book = books.find(function(book) { 
+		return book.id == params.get('bookId'); 
+	    }); 
 	});
     }
 }

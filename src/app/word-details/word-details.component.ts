@@ -17,7 +17,9 @@ export class WordDetailsComponent implements OnInit {
 
     ngOnInit() {
 	this.route.paramMap.subscribe(params => {
-	    this.word = words[+params.get('wordId')];
+	    this.word = words.find(function(word) { 
+		return word.id == params.get('wordId'); 
+	    }); 
 	});
     }
 }
