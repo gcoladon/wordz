@@ -18,7 +18,9 @@ import { WordListComponent } from './word-list/word-list.component';
     ],
     declarations: [
 	AppComponent,
-	BookListComponent, WordListComponent ],
+	BookListComponent,
+	TopBarComponent,
+	WordListComponent ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
