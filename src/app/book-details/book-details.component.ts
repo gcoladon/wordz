@@ -10,7 +10,8 @@ import { words } from '../words';
   styleUrls: ['./book-details.component.css']
 })
 export class BookDetailsComponent implements OnInit {
-  book;
+    book;
+    words = words;
 
     constructor(
 	private route: ActivatedRoute,
