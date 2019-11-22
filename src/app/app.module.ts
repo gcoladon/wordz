@@ -16,16 +16,18 @@ import { WordDetailsComponent } from './word-details/word-details.component';
     FormsModule, 
     RouterModule.forRoot([
       { path: '', component: BookListComponent },
-      { path: 'log-in', component: WordListComponent },
+      { path: 'books/:bookId', component: BookDetailsComponent },
+      { path: 'words/:wordId', component: WordDetailsComponent },
+      { path: 'words', component: WordListComponent },
     ])
     ],
     declarations: [
-	AppComponent,
-	BookListComponent,
-	TopBarComponent,
-	WordListComponent,
-	BookDetailsComponent,
-	WordDetailsComponent ],
+        AppComponent,
+        BookListComponent,
+        TopBarComponent,
+        WordListComponent,
+        BookDetailsComponent,
+        WordDetailsComponent ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

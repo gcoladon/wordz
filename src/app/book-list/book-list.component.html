@@ -1,6 +1,15 @@
 <h3>Here are some books people are using Wordz to learn new words from:</h3>
 
 <div *ngFor="let book of books">
-  {{ book.name }}, by {{ book.author }}, pp. {{ book.pages }}
+
+  <h3>
+    <a [title]="book.name + ' details'" [routerLink]="['/books', book.id]">
+      {{ book.name }}
+    </a>
+  </h3>
+
+    By: {{ book.author }}
+    Pages: {{ book.pages }}
+
 </div>
 

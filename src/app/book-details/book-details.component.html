@@ -1,4 +1,17 @@
-<p>
-book-details works!
+<h3>
+  {{ book.name }}
+</h3>
 
-</p>
+By: {{ book.author }}
+Pages: {{ book.pages }}
+
+<div *ngFor="let word of words">
+  <p *ngIf="book.id == word.book_id">
+    <a [title]="word.word + ' details'" [routerLink]="['/words', word.id]">
+      {{ word.word }}
+    </a>
+
+    Definition: {{ word.def }}
+    On page: {{ word.page }}
+  </p>
+</div>

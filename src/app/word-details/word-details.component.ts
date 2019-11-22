@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { words } from '../words';
 
 @Component({
   selector: 'app-word-details',
@@ -6,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./word-details.component.css']
 })
 export class WordDetailsComponent implements OnInit {
+    word;
 
-  constructor() { }
+    constructor(
+	private route: ActivatedRoute,
+    ) { }
 
-  ngOnInit() {
-  }
-
+    ngOnInit() {
+	this.route.paramMap.subscribe(params => {
+	    this.word = words[+params.get('wordId')];
+	});
+    }
 }
